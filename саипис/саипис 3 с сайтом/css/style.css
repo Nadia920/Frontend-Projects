@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: verdana, arial, sans-serif;
+}
+
+body{
+    padding: 0;
+    display: flex;/*flex Элемент ведёт себя как блочный и выкладывает содержимое согласно флекс-модели*/
+    flex-direction: column;/*flex-direction - CSS свойство , указывающее на то,как flex-элементы располагаются во flex-контейнере по главной оси и направлению (normal или reversed). column Направление, в котором блоки будут располагаться вертикально*/
+}
+
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    color: #1f7726;
+    background-color: #b0f198;
+}
+
+p{
+    margin-left: 5%;/*относительно ширины родительского блока*/
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    flex: 1;/**/
+    background-color: #f5ffd9;
+}
+
+form{
+    text-align: left;
+}
+
+#nav_button{
+    margin-left: 10%;
+}
+
+button{
+    border-bottom-color: #b0f198;
+    border-radius: 5px;
+}
+
+#get_info.button{
+    margin-left: 5%;
+    padding: 7px;
+}
+
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c5a49e;
+    text-decoration: none;/*Оформление текста*/
+}
+
+a:hover {
+    color: rgb(28, 23, 95);
+    text-decoration: underline;
+}
+
+article {
+    padding: 10px;
+    background: url("C:/Users/User/Documents/саипис 3 с сайтом/resource/lapt.jpg") center/100% 100% no-repeat;
+    flex: 3 2 12em;/**/
+}
+
+aside{
+    flex: 1;
+    background-color: #f5ffd9;
+}
+
+footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: #1f7726;
+    background-color: #b0f198;
+}
+
+@media screen and (min-width: 600px) {
+     
+    body{
+        min-height: 100vh;/*Эквивалентно 1% высоты окна браузера.*/
+    }
+    main {
+        flex-direction: row;/* Направление, в котором блоки будут располагаться в строку*/
+        min-height: 100%;
+        flex: 1 1 auto;
+    }
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: #1f7726;
+}
+
+#art{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+

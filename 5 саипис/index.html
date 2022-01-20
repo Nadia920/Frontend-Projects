@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="s1.css">
+    <script src="index-s.js"></script>
+    <title>Магазин инструментов</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1 class="cop">Обязательно для заполнения</h1>
+    </header>
+
+    <article>
+        <form onsubmit="createObject()" action="#" method="GET">
+            <section>
+                <input type="hidden" id="id" value="1">
+
+                <div class="field">
+                    <label for="instrument-name">Введите название инструмента</label>
+                    <input required type="text" name="instrument-name" id="instrument-name" placeholder="Название инструмента">
+                </div>
+
+
+                <div class="field">
+                    <label for="inferiority-instrument">Введите назначение инструмента</label>
+                    <input required type="text" name="inferiority-instrument" id="inferiority-instrument" placeholder="Назначение">
+                </div>
+
+
+                <div class="field">
+                    <label for="instrument-price">Введите цену инструмента</label>
+                    <input required type="number" name="instrument-price" id="instrument-price" placeholder="Цена" min="1">
+                </div>
+
+
+                <div class="field">
+                    <label for="instrument-weight">Введите вес инструмента</label>
+                    <input required type="number" name="instrument-weight" id="instrument-weight" placeholder="Вес" min="1">
+                </div>
+
+
+                <input type="submit" id="button" name="send-info" value="Добавить запись">
+                <input type="reset" id="button">
+            </section>
+        </form>
+
+
+        <div class="field">
+            <label for="add-property">Дополнительное свойство (не обязательно)</label>
+            <input type="text" name="add-property" id="add-property" placeholder="Бренд">
+        </div>
+
+
+        <div class="field">
+            <button onclick="addNewProperty()" id="button">Добавить новое свойство</button>
+
+            <button onclick="delNewProperty()" id="button">Удалить новое свойство</button>
+        </div>
+
+
+        <div class="field">
+            <select id="instrument-list"></select>
+            <button onclick="dele()" id="button">Удалить запись</button>
+        </div>
+        <div class="field">
+            <button onclick="MinMax()" id="button">Вывести max и min вес инструмента</button>
+        </div>
+        <div class="field">
+            <button onclick="showAll()" id="button">Вывести все инструменты</button>
+        </div>
+        <table id="table">
+
+        </table>
+    </article>
+
+</div>
+</body>
+</html>

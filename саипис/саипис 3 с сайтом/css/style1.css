@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: verdana, arial, sans-serif;
+}
+
+body{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #1f7726;
+    background-color: #b0f198;
+    width: auto;
+}
+
+p{
+    margin-left: 5%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    flex: 1;
+    background-color: #f5ffd9;
+    width: auto;
+}
+
+#nav_button{
+    margin-left: 10%;
+}
+
+button{
+    border-bottom-color: #b0f198;
+    border-radius: 5px;
+}
+
+#get_info.button{
+    margin-left: 5%;
+    padding: 7px;
+}
+
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c5a49e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(28, 23, 95);
+    text-decoration: underline;
+}
+
+article{
+    padding: 10px;
+    background: url("C:/Users/User/Documents/саипис 3 с сайтом/resource/lapt.jpg") center/100% 100% no-repeat;
+    flex: 3 2 12em;
+}
+
+aside{
+    flex: 1;
+    background-color: #f5ffd9;
+}
+
+footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #1f7726;
+    background-color: #b0f198;
+    width: auto;
+}
+
+@media screen and (min-width: 600px) {
+     
+    body{
+        min-height: 100vh;
+    }
+    main {
+        flex-direction: row;
+        min-height: 100%;
+        flex: 1 1 auto;
+    }
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    color: #1f7726;
+}
+
+#art{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+
+th, td {
+    border: 3px solid;
+    border-color: #00681f;
+    text-align: center;
+    font-size: 10px;
+    margin: 0;
+    padding: 3px;
+}
+
+
+table {
+    border-collapse: collapse;
+    color: #1f7726;
+    background-color: #b0f198;
+}
+

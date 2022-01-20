@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8"><!--Указывает кодировку документа-->
+  <meta name="viewport" content="width=device-width" /><!--Viewport - это видимая пользователю область веб-страницы, то, что может увидеть пользователь, не прибегая к прокрутке. параметр (width=device-width) отвечает за то, чтобы ширина видимой области веб-страницы равнялась CSS ширине устройству (device-width). Данная ширина (CSS) - это не физическое разрешение экрана. Это некоторая величина независящая от разрешения экрана. Она предназначена для того, чтобы мобильный адаптивный дизайн сайта отображался на всех устройствах одинаково независимо от их плотности пикселей экрана.-->
+  <title>Опрос для подбора техники</title>
+  <link rel="stylesheet" href="C:/Users/User/Documents/саипис 3 с сайтом/css/style.css">
+  <script src="C:/Users/User/Documents/саипис 3 с сайтом/js/form.js" defer></script>><!--Атрибут defer сообщает браузеру, что он должен продолжать обрабатывать страницу и загружать скрипт в фоновом режиме, а затем запустить этот скрипт, когда он загрузится.-->
+</head>
+
+<body>
+  <header>
+    <p>Здравствуй, дорогой гость!</p>
+  </header>
+  <main>
+    <nav>
+      <form id="nav_button">
+        <br><br><br>
+        <button class="button" id="get_info">
+          <a href="C:/Users/User/Documents/саипис 3 с сайтом/html/index1.html"
+            onclick="window.open(this.href, '_self'); return false;">Результаты</a><!--_self Загружает страницу в текущее окно. return false Но нам необходимо обрабатывать клики в JavaScript, а стандартное действие браузера (переход по ссылке) – отменить-->
+        </button>
+      </form>
+    </nav>
+    <article>
+      <div id="art">
+        <h2>
+          <center>Пройдите, пожалуйста, опрос о предпочтениях в ноутбуках для подбора соответствующего товара</center>
+        </h2>
+        <div class="content-wrap">
+          <form name="myForm" id = "myForm">
+            <div>
+              <label for="name">Введите Ваше имя</label><br>
+              <input type="text" id="name" name="name" pattern="^[а-яА-ЯеЁa-zA-Z-\s]+$" required value=""><br><br>
+            </div>
+
+            <div>
+              <label>Выберите ОС</label><br>
+              <input type="radio" id="Windows" checked name="os" value="Windows">Windows<br>
+              <input type="radio" id="Linux" name="os" value="Linux">Linux<br>
+              <input type="radio" id="No" name="os" value="Без операционной системы">Без операционной системы<br>
+              <input type="radio" id="Mac OS" name="os" value="Mac OS">Mac OS<br><br>
+            </div>
+
+            <div>
+                <label>Выберите марку ноутбука</label><br>
+                <input type="radio" id="ASUS" checked name="model" value="ASUS">ASUS<br>
+                <input type="radio" id="Apple" name="model" value="Apple">Apple<br>
+                <input type="radio" id="Dell" name="model" value="Dell">Dell<br>
+                <input type="radio" id="Xiaomi" name="model" value="Xiaomi">Xiaomi<br>
+                <input type="radio" id="Lenovo" name="model" value="Lenovo">Lenovo<br>
+                <input type="radio" id="Acer" name="model" value="Acer">Acer<br>
+                <input type="radio" id="HP" name="model" value="HP">HP<br><br>
+              </div>
+
+           
+            <div>
+              <label for="hard_disk">Какой размер и тип жесткого диска Вам нужен?</label><br>
+              <input type="text" id="hard_disk" name="hard_disk" value="" required><br><br>
+
+            </div>
+
+            <div>
+                <label for="video_card">Какую видеокарту Вы хотите?</label><br>
+                <textarea type="text" id="video_card" name="video_card" value="" required></textarea><br><br>
+            </div>
+              <div>
+                <label for="cost">Какую цену Вы хотите?</label><br>
+                <input type="text" id="cost" name="cost" value="" required><br><br>
+              </div>
+
+              <div>
+                <label for="email">Введите, пожалуйста, свой email для отправления Вам вариантов ноутбуков</label><br>
+                <input type="email" id="email" name="email" required value=""><br><br>
+              </div>
+               
+              <div>
+                <label for="password">Введите Ваш пароль</label><br>
+                <input type="password" id="password" name="password" value="" required><br><br>
+              </div> 
+
+
+            <div>
+              <label for="kinds">Вид техники?</label><br>
+              <input type="checkbox" id="cbox1" name="kind" value="Ноутбук" checked>Ноутбук<br>
+              <input type="checkbox" id="cbox3" name="kind" value="Нетбук" checked>Нетбук<br><br>
+            </div>
+              
+            <div>
+              <label for="screen_size">Какой размер экрана Вы хотите?</label><br>
+              <select id="screen_size" name="screen_size">
+                <option value="14,5">14,5</option>
+                <option value="15">15</option>
+                <option value="17">17</option>
+              </select><br><br>
+            </div>
+
+            <div>
+                <label for="screen_resolution">Какое расширение экрана Вы хотите?</label><br>
+                <select id="screen_resolution" name="screen_resolution">
+                  <option value="HD (1366 x 768)">HD (1366 x 768)</option>
+                  <option value="HD+ (1600 x 900)">HD+ (1600 x 900)</option>
+                  <option value="FullHD (1080p) (1920х1080)">FullHD (1080p) (1920х1080)</option>
+                  <option value="QHD / WQHD (2K) (2560 x 1440)">QHD / WQHD (2K) (2560 x 1440)</option>
+                  <option value="QHD+ (3K) (3200 x 1800)">QHD+ (3K) (3200 x 1800)</option>
+                  <option value="UHD (4K) (3840 x 2160)">UHD (4K) (3840 x 2160)</option>
+                </select><br><br>
+              </div>
+
+              <div>
+                <label for="matrix_type">Какой тип матрицы Вы хотите?</label><br>
+                <select id="matrix_type" name="matrix_type">
+                  <option value="TN+Film">TN+Film</option>
+                  <option value="HD+ (1600 x 900)">HD+ (1600 x 900)</option>
+                  <option value="IPS">IPS</option>
+                  <option value="*VA">*VA</option>
+                </select><br><br>
+              </div>
+
+              <div>
+                <label for="CPU">Какой процессор Вам нужен?</label><br>
+                <select id="CPU" name="CPU">
+                  <option value="Core i3-6100U">Core i3-6100U</option>
+                  <option value="Core i5-6200U">Core i5-6200U</option>
+                  <option value="Core i7-6500U">Core i7-6500U</option>
+                  <option value="Core i7-7500U">Core i7-7500U</option>
+                  <option value="Core i7-7Y75">Core i7-7Y75</option>
+                  <option value="Core i7-8550U">Core i7-8550U</option>
+                </select><br><br>
+              </div>
+  
+              <div>
+                <label for="RAM_size">Какой объем оперативной памяти вам нужен?</label><br>
+                <select id="RAM_size" name="RAM_size">
+                  <option value="SRAM">SRAM</option>
+                  <option value="DRAM (DDR2)">DRAM (DDR2)</option>
+                  <option value="DRAM (DDR3)">DRAM (DDR3)</option>
+                  <option value="DRAM (DDR4)">DRAM (DDR4)</option>
+                  <option value="DRAM (DDR3L)">DRAM (DDR3L)</option>
+                </select><br><br>
+              </div>
+
+            <div>
+              <label for="mood">Пожалуйста, оцените своё настроение:</label><br>
+              <input type="range" id="mood" name="mood" min="0" max="10" step="1">
+            </div>
+
+
+            <div>
+              <label for="noSee">Скрытое поле</label><br>
+              <input type="hidden" id="noSee" name="noSee" value="No watch">
+            </div>
+
+            <p>
+              <button id="submit" type="submit" name="submitbutton" value="Submit">Отправить</button>
+              <button type="reset" id="reset" name="resetbutton" value="Reset">Очистить содержимое</button>
+            </p>
+          </form>
+        </div>
+      </div>
+      </div>
+    </article>
+    <aside>
+         <p>&nbsp;&nbsp;&nbsp;Размер экрана</p>  
+      <p>&nbsp;&nbsp;&nbsp;Оптимальный вариант – экран с диагональю 15,6 дюймов. 
+      Также можно обратить внимание на модели с диагональю экрана 17,3 
+      дюймов, они хорошо подходят если в основном работаете стационарно. 
+      Для частых поездок лучше выбрать ультрабук с экраном 13-14 дюймов.</p> 
+      <p></p>  
+      <p>&nbsp;&nbsp;&nbsp;Разрешение экрана</p>
+      <p> &nbsp;&nbsp;&nbsp;Лучшее решение – Full HD (1920 × 1080). Меньшее разрешение допустимо 
+      лишь в том случае, если покупается бюджетный ноутбук с базовыми параметрами. 
+      Более высокие разрешения – 2K или 4K на наш взгляд излишни, а также они имеют 
+      проблемы с масштабированием Windows в приложениях.</p>
+      <p></p>  
+      <p>&nbsp;&nbsp;&nbsp;Тип матрицы</p>
+      <p>&nbsp;&nbsp;&nbsp;Наиболее распространенные матрицы в современных ноутбуках – TN+Film и IPS. 
+      Матрица TN+Film характеризуется невысокой стоимостью, но экран ноутбука не 
+      будет иметь хороших углов обзора. Матрица IPS обладает превосходной цветопередачей 
+      и обеспечивает хорошие углы обзора. При выборе игровых моделей стоит рассматривать 
+      варианты с частотой развертки экрана 120-144 Гц. 
+      Такие матрицы выводят более плавную картинку и меньше нагружают глаза.</p>
+      <p></p>  
+      <p>&nbsp;&nbsp;&nbsp;Процессор</p> 
+      <p>&nbsp;&nbsp;&nbsp;От процессора зависит производительность устройства, энергоэффективность, скорость 
+      работы и ряд других параметров. Для офисных задач будет достаточно процессоров 
+      Intel Celeron, Intel Pentium, Intel Core i3, либо AMD Athlon, AMD Ryzen 3. 
+      Для более ресурсоемких рабочих задач – Intel Core i5, i7, i9 либо AMD Ryzen 5, 7, 9 
+      (в зависимости от сложности задач и ваших средств). Для игровых ноутбуков процессоры 
+      от Intel core i5, AMD Ryzen 5 и выше с индексом H в конце маркировки – это говорит о том, 
+      что процессор не урезан в угоду энергосбережения.</p>
+      <p></p>  
+      <p>&nbsp;&nbsp;&nbsp;Объем оперативной памяти</p>  
+      <p>&nbsp;&nbsp;&nbsp;Оперативная память отвечает за то, насколько ресурсоемкие приложения смогут стабильно 
+      работать на ноутбуке и сколько программ вы сможете запустить одновременно. Оптимальный объем 
+      для дома\офиса\учебы - 8 ГБ. Для игровых\тяжелых рабочих задач 8 Гб можно рассматривать только 
+      если планируете в будущем расширить этот объем. Лучше подойдут модели с объемом 12, 16 Гб и выше.</p>
+      <p></p>  
+      <p>&nbsp;&nbsp;&nbsp;Объем и тип жесткого диска</p> 
+      <p>&nbsp;&nbsp;&nbsp;В современном ноутбуке обязательным является наличие SSD накопителя, он ускоряет скорость загрузки 
+      системы и приложений, а также более надежен и тих в работе по сравнению с HDD, т.к. не имеет внутри 
+      механических движимых деталей. Рекомендуемый минимальный объем 256. Оптимально – 512 и выше. Модели 
+      с HDD стоит рассматривать только в том случае, если в ноутбуке так же присутствует SSD, а HDD будет 
+      использоваться сугубо под хранение большого объема файлов, не требующих высокой скорости доступа.</p>
+      <p></p>  
+      <p>&nbsp;&nbsp;&nbsp;Видеокарта</p>
+      <p>&nbsp;&nbsp;&nbsp;Видеокарта отвечает за производительность при работе с графикой, 3D и в играх. Для учебы, дома, 
+      и если вы не играете в игры - лучше рассматривать ноутбуки со встроенной в процессор видеокартой. 
+      Такие модели ноутбуков так же отличаются хорошей энергоэффективностью и дольше живут от батареи.
+      Для работы с видеомонтажом, 3D и игр лучше рассматривать модели с дискретной видеокартой. 
+      Для несложной работы и игр подойдут мобильные видеокарты Nvidia MX. Для ресурсоемкой 
+      работы и современных игр подойдут видеокарты Nvidia GTX и RTX.</p>
+    </aside>
+  </main>
+  <footer>
+    <p>Опрос</p>
+  </footer>
+</body>
+
+</html>

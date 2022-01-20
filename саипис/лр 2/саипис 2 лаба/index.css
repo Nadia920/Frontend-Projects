@@ -1,0 +1,83 @@
+body>svg {
+    width: 200px;
+    height: 50px;
+    position: absolute;/*Абсолютно позиционируемый элемент — это элемент, чьё вычисленное значение position является absolute или fixed. top, right, bottom и left (en-US) задают смещения от краёв содержащего блок элемента. (Содержащий блок является предком, относительно которого расположен элемент.) Если элемент имеет поля, они добавляются к смещению. Элемент устанавливает новый контекст форматирования блока (BFC) для своего содержимого.*/
+    top: 0;
+    left: 0;
+    }
+    .header {
+    font-size: 40px;
+    fill: #fff;
+    }
+    h2 {
+    font-family: Impact, fantasy;/**/
+    font-size: 30px;
+    margin-top: 50px;
+    }
+    p {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    }
+    .container {
+    width: 500px;
+    height: 200px;
+    margin-left: 50px;
+    }
+    .container svg:nth-child(1) {
+    margin-left: 25px;
+    transform: rotateZ(45deg);
+    }
+    .container svg:nth-child(2) {
+    margin-left: -20px;
+    transform: rotateZ(45deg);
+    }
+    .container svg:nth-child(3) {
+    margin-left: -20px;
+    transform: rotateZ(45deg);
+    }
+    .SVG-figure {
+    width: 100px;
+    height: 200px;
+    }
+    .SVG-figure rect {
+    stroke: #700910;
+    stroke-width: 1px;
+    fill: #edb2b6;
+    }
+    .SVG-figure text {
+    font-size: 30px;
+    fill: #fff;
+    }
+    .flashing-word {
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    color: #700910;
+    position: relative;
+    bottom: 150px;
+    left: 50px;
+    letter-spacing: 10px;
+    animation: blink .8s infinite alternate;
+    }
+   @keyframes blink {
+       from {
+           opacity: 1;
+       }
+       to {
+        opacity: 0;
+       }
+   }
+   .continuation{
+       font-size: 30px;
+       color: rgb(0, 0, 0);
+       font-weight: bold;
+   }
+   .content::after{
+
+    position: relative;  
+    content: url(Olga.jpg);  
+    content: url(test.jpg);  
+    height: 390px;  
+    width: 400px;
+    
+  }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Фильмы</title>
+</head>
+<body>
+<section><!--Задаёт раздел документа, может применяться для блока новостей-->
+    <div class="section">
+        <form>
+            <div>
+                <p class="spisok">Фильмы в наличии
+                    <select name="txt_name" id="txt_name">
+                    </select>
+                </p>
+            </div>
+           <div>
+            <label for="del_name1">Список Удалённых записей</label>
+            <br><input list="del_name" id="del_name1" name="del_name" class = "list"/></br> 
+                <datalist  id="del_name"><!--Создает список вариантов, которые можно выбирать при наборе в текстовом поле. Изначально этот список скрыт и становится доступным при получении полем фокуса или наборе текста.-->
+                </datalist>  
+           </div>
+            <div>
+                <br><label for="name">Введите название фильма</label><br>
+                <br><input type="text" id="name" name="name" required value=""><br><br>
+              </div>
+            <div>
+                <br> <input type="button" class="button-onclick" id="create" onclick="myFunction()" value="Добавить элемент"></br>
+              </div>
+            <div id="container"> </div>
+        </form>
+        <div>
+        <br> <input type="button" class="button-onclick" onclick="del();" value="Удалить элемент"> </br>
+        <br> <input type="button" class="button-onclick" onclick="see();" value="Просмотр элементов"></br>
+        </div>
+    </div>
+</section>
+<script src="index.js"></script>
+</body>
+</html>
