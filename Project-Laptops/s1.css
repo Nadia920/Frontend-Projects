@@ -24,7 +24,7 @@ body{
 }
 
 article{
-    background-image:url(../resources/фон5.jpg);
+    background-image:url(resources/фон5.jpg);
     background-size: 100% 100%;
     flex-grow: 3.75;
     height: 1500px;
