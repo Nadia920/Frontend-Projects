@@ -66,7 +66,7 @@ a:hover {
 
 article {
     padding: 10px;
-    background: url("C:/Users/User/Documents/саипис 3 с сайтом/resource/lapt.jpg") center/100% 100% no-repeat;
+    background: url("../resource/lapt.jpg") center/100% 100% no-repeat;
     flex: 3 2 12em;/**/
 }
 
