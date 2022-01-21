@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Опрос покупателя ноутбука</title>
+    <link  rel="stylesheet" type="text/css" href="s1.css" >
+    <script src="index-s.js"></script>
+</head>
+
+
+<header>
+    <p class="hd">Вы поможете нам улучшить качество обслуживания</p>
+</header>
+
+<body>
+<div class="content">
+
+    <article>
+
+        <legend>Вопросы:</legend>
+        <form action="#" onsubmit ="createPage()" method="GET"  >
+
+
+            <div class="name" >
+                <p>1. Укажите Ваше имя:</p>
+                <input type="text" size="40" name="name" id="name" maxlength="20" pattern="(^[А-Яа-яЁё\s]+$)" required>
+            </div>
+
+            <div class="email"><p>2.Укажите Ваш e-mail:</p>
+                <input type="email" name="email">
+            </div>
+
+            <div class="producers">
+                <p>3. Какие производитли ноутбуков <br>Вам больше нравяться?:<br></p>
+                <label><input type = "checkbox" name = "range" id = "box1" value="APPLE">APPLE</label><Br>
+                <label><input type = "checkbox" name = "range" id = "box2" value="DELL">DELL</label><Br>
+                <label><input type = "checkbox" name = "range" id = "box3" value="LENOVO">LENOVO</label><Br>
+                <label><input type = "checkbox" name = "range" id = "box4" value="Hewlett-Packard">Hewlett-Packard</label><Br>
+                <label><input type = "checkbox" name = "range" id = "box5" value="MSI">MSI</label><Br>
+                <label><input type = "checkbox" name = "range" id = "box6" value="ASUS">ASUS</label><Br>
+                <label><input type = "checkbox" name = "range" id = "box7" value="ACER">ACER</label><Br>
+                <label><input type = "checkbox" name = "range" id = "box8" value="HP">HP</label><Br>
+            </div>
+
+            <div class="grade">
+                <p>4. Как Вы оцените последний ноутбук, <br>купленный у нас?</p>
+                <select name="grade" id="sp">
+                    <option hidden disabled selected ></option>
+                    <option value = "1" >1</option>
+                    <option value = "2" >2</option>
+                    <option value = "3" >3</option>
+                    <option value = "4" >4</option>
+                    <option value = "5" >5</option>
+                </select>
+            </div>
+
+
+
+
+            <div class = "choice"><p>5. Довольны ли Вы обслуживающим персоналом?:</p>
+                <label><input type = "radio" name = "radio" id="radio1" value="Доволен(а)">Доволен(а)</label><Br>
+                <label><input type = "radio" name = "radio" id="radio2" value="Недоволен(а)">Недоволен(а)</label><Br>
+            </div>
+
+
+
+            <div class="color1">
+                <p>6. Какие цвета Вы бы хотели<br>увидеть на ноутбуке?</p>
+                <input type="color" id="favcolor" name="favcolor" value=""><br><br>
+            </div>
+            <div class = "offer">
+                <p>7.Если у вас есть предложения по улучшению сервиса<br> нашего магазина:</p>
+                <textarea maxlength = "500" rows = "10" cols = "60" name = "comment" id = "comment"></textarea>
+            </div>
+
+
+            <p><input type="submit" name="button1" value="Отправить" class="b1" >
+                <input type="button" name="button2" value="Очистить" class="b2" onclick="this.form.reset();"></p>
+        </form>
+
+    </article>
+    <nav >
+        <ul class="menu">
+            <li class="forli">Кредит и рассрочка</li>
+            <li class="forli">Доставка</li>
+            <li class="forli">Бонусы</li>
+            <li class="forli">Мои заказы</li>
+            <li class="forli">Обмен и возврат</li>
+            <li class="forli">Отзывы и предложения</li>
+            <li class="forli">Режим работы</li>
+            <li class="forli">Контакты</li>
+        </ul>
+    </nav>
+    <aside>
+        <div class="noyt">
+            <img src="../resources/ноут2.jpg" alt="noyt" >
+        </div>
+    </aside>
+
+</div>
+</body>
+
+<footer>
+    <p class="help">Звоните нам<br>+375 453349248</p>
+    <p class="cop">&copy;2021 By Neberova Anastasia</p>
+    <div class="img">
+        <img src="../resources/ноут1.jpg" alt="ноутбук">
+    </div>
+</footer>

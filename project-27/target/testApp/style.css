@@ -1,0 +1,70 @@
+body {
+    background: #20B2AA;
+    font: 18px Georgia, serif;
+    padding: 20px 0;
+    margin: 0;
+    height: auto;
+}
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+.page-title {
+   font: 40px Georgia, serif;
+    color: rgb(178, 34, 34);
+    text-transform: uppercase;
+    text-align: center;
+    width: 400px;
+    border-bottom: 2px solid rgb(178, 34, 34);
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.statistics {
+    font: 30px Georgia, serif;
+    color: rgb(178, 34, 34);
+    text-transform: uppercase;
+    text-align: center;
+    width: 500px;
+    border-bottom: 2px solid rgb(178, 34, 34);
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.data {
+    margin: 20px 0 50px;
+}
+.payments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 50px 0;
+}
+.payments-table th {
+    font: normal 22px Georgia, serif;
+    text-transform: uppercase;
+    color: #8B0000;
+    height: 70px;
+    border: 1px solid #8B0000;
+    background: rgb(178, 34, 34);
+}
+
+.payments-table td {
+    height: 70px;
+    padding-left: 10px;
+    border: 1px solid #8B0000;
+}
+
+.payments-table tr td:nth-child(1) {
+    width: 200px;
+}
+.payments-table tr td:nth-child(2) {
+    width: 300px;
+}
+.payments-table tr td:nth-child(3) {
+    width: 250px;
+}
+.payments-table tr td:nth-child(4) {
+    width: 250px;
+}
+
+.payments-table tr td:nth-child(5) {
+    width: 150px;
+}

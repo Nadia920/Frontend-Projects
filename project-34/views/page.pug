@@ -1,0 +1,217 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Магазин ноутбуков</title>
+    <style>
+        body {
+            background: #f0f0f0;
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        article {
+            background: #c27115;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 85%;
+            height: auto;
+        }
+        h1 {
+            text-align: center;
+            font: 20px monospace;
+        }
+        .field, #new {
+            margin: 10px;
+            padding: 10px;
+            display: block;
+            background-color: #d1732f;
+            width: auto;
+            height: auto;
+        }
+        label { font: bold 20px monospace; }
+        section { align-content: center; }
+        input[type=text], input[type=number], select {
+            width: 100%;
+            box-sizing: border-box;
+            border: 2px solid #e18038;
+            font-size: 16px;
+            background-color: #ffffff;
+            padding: 10px;
+            resize: none;
+        }
+        #button1, #button2, #button3, #button4, #button5, #button6, #buttonnew {
+            background-color: #e14a36;
+            font-size: 16px;
+            padding: 16px 32px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        #button1, #button2, #button3, #button4, #button5, #button6:hover {
+            background-color: #ee7e2e;
+            color: white;
+        }
+        table {
+            width: 100%;
+            border: 2px solid #e86100;
+        }
+        td { padding: 5px; }
+        header {
+            flex: 100%;
+            background: #cc3434;
+            opacity: 0.7;
+            width: 30%;
+            height: 50px;
+        }
+        .cop {
+            font: bolde 26px "Monotype Corsiva";
+            color: #ffffff;
+            position: absolute;
+            left: 500px;
+            right: 30px;
+            width: 300px;
+        }
+        h1 { font: bold 22px Sylfaen; }
+        #new { display: none; }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Some Title</h1>
+        </header>
+
+        <article>
+            <form action="/" method="post" id="myform">
+                <input type="hidden" id="ida" value="1">
+
+                <div class="field">
+                    <label for="nameO">Введите марку</label>
+                    <input required type="text" name="nameO" id="nameO" placeholder="Марка">
+                </div>
+
+
+                <div class="field">
+                    <label for="window">Введите размер экрана</label>
+                    <input required type="text" name="window" id="window" placeholder="Экран">
+                </div>
+
+
+                <div class="field">
+                    <label for="permission">Введите разрешение экрана</label>
+                    <input required type="text" name="permission" id="permission" placeholder="Разрешение экрана">
+                </div>
+
+
+                <div class="field">
+                    <label for="matrix">Введите тип матрицы</label>
+                    <input required type="text" name="matrix" id="matrix" placeholder="Тип матрицы">
+                </div>
+
+
+                <div class="field">
+                    <label for="RAM">Объем оперативной памяти</label>
+                    <input required type="text" name="RAM" id="RAM" placeholder="Оперативная память">
+                </div>
+
+                <select name="pay" value="Способ оплаты">
+                    <option name="pay" selected>Картой через интернет</option>
+                    <option name="pay">Картой либо наличными на пункте выдачи</option>
+                </select>
+
+                <p>Мощность процессора</p>
+                <label for="CPU">2 ядра</label>
+                <input type="radio" id="CPU2" name="CPU" value="2 ядра">
+                <label for="CPU">4 ядра</label>
+                <input type="radio" id="CPU4" name="CPU" value="2 ядра">
+
+                <p>Вид техники</p>
+                <label for="technique1">Ноутбук
+                    <input type="checkbox" id="technique1" name="technique" value="Ноутбук">
+                </label><br>
+                <label for="technique2">Ультрабук
+                    <input type="checkbox" id="technique2" name="technique" value="Ультрабук">
+                </label><br>
+                <button id="send" type="submit">Добавить запись</button>
+
+            </form>
+            <form action="/" id="myform1">
+
+                <input type="hidden" id="id" value="1">
+
+                <div class="field">
+                    <label for="nameN">Введите марку</label>
+                    <input required type="text" name="nameN" id="nameN" value="#{brand_name}" disabled>
+                </div>
+
+
+                <div class="field">
+                    <label for="windowN">Введите размер экрана</label>
+                    <input required type="text" name="windowN" id="windowN" value="#{window_size}" disabled>
+                </div>
+
+
+                <div class="field">
+                    <label for="permissionN">Введите разрешение экрана</label>
+                    <input required type="text" name="permissionN" id="permissionN" value="#{window_resolution}" disabled>
+                </div>
+
+
+                <div class="field">
+                    <label for="matrixN">Введите тип матрицы</label>
+                    <input required type="text" name="matrixN" id="matrixN" value="#{matrix_type}" disabled>
+                </div>
+
+
+                <div class="field">
+                    <label for="RAMn">Объем оперативной памяти</label>
+                    <input required type="text" name="RAMn" id="RAMn" value="#{RAM_capacity}" disabled>
+                </div>
+
+                <select name="selectN" value="#{pay}">
+                    <option value="">Картой через интернет</option>
+                    <option value="">Картой либо наличными на пункте выдачи</option>
+                </select>
+
+                <p>Мощность процессора</p>
+                
+                if two_core=='true'
+                    <label for="CPUn">2 ядра</label>
+                    <input type="radio" id="CPU2n" name="CPUn" value="" checked disabled>
+                    <label for="CPUn">4 ядра</label>
+                    <input type="radio" id="CPU4n" name="CPUn" value="" disabled>
+                else
+                    <label for="CPUn">2 ядра</label>
+                    <input type="radio" id="CPU2n" name="CPUn" value="" disabled>
+                    <label for="CPUn">4 ядра</label>
+                    <input type="radio" id="CPU4n" name="CPUn" value="" checked disabled>
+
+                <p>Вид техники</p>
+                if selected[0]=="Ноутбук" || selected[1]=="Ноутбук"
+                    <label for="technique1N">Ноутбук
+                        <input type="checkbox" id="technique1N" name="techniqueN" checked disabled>
+                    </label><br>
+                else
+                    <label for="technique1N">Ноутбук
+                        <input type="checkbox" id="technique1N" name="techniqueN" disabled>
+                    </label><br>
+                if selected[1]=="Ультрабук" || selected[0]=="Ультрабук"
+                    <label for="technique2N">Ультрабук
+                        <input type="checkbox" id="technique2N" name="techniqueN" checked disabled>
+                    </label><br>
+                else
+                    <label for="technique2N">Ультрабук
+                        <input type="checkbox" id="technique2N" name="techniqueN" disabled>
+                    </label><br>
+            </form>
+        </article>
+
+    </div>
+</body>
+
+</html>

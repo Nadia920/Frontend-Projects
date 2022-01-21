@@ -1,0 +1,73 @@
+body {
+    background-size: cover;
+    background-image: url(../resource/fon.jpg);
+    background-repeat: no-repeat;
+    font-family: monospace;
+}
+
+.a {
+    display: flex;
+    flex-direction: column;
+}
+
+.bs {
+    height: 12em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 500px;
+    align-items: center;
+}
+
+.OS_title {
+    display: flex;
+    flex-basis: 4em;
+    align-items: center;
+    font-size: 40px;
+    color: #b006a2;
+}
+
+.OS_body {
+    display: flex;
+    justify-content: center;
+    max-height: 15em;
+    min-width: 500px;
+    max-width: 200px;
+    font-size: 1.2em;
+    color: #b006a2;
+}
+
+.OS_body ol {
+    flex: 0 1 auto;
+}
+
+.OS_body li {
+    margin-bottom: 5px;
+}
+
+button {
+    width: 130px;
+    height: 45px;
+    font-family: sans-serif, 'Montserrat';
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #ddcfcb;
+    background: #72396d;
+}
+
+button:hover {
+    background: #ffffff;
+    cursor: pointer;
+    color: #72396d;
+}
+
+button#full_information {
+    margin-top: 15px;
+}

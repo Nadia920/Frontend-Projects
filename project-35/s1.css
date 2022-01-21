@@ -1,0 +1,249 @@
+* {box-sizing: border-box;}
+
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#FF4500;
+    border-bottom: 3px solid #FF4500;
+}
+.hd{
+    font-family: Monotype Corsiva;
+    font-weight:bolder;
+    font-size:26px;
+    color:#FFFFE0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    display: flex;
+}
+
+article{
+    background-image:url(../resources/фон5.jpg);
+    background-size: 100% 100%;
+    flex-grow: 3.75;
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgb(186, 85, 211);
+}
+legend{
+    position:absolute;
+    font-family:Lucida Calligraphy;
+    font-size:28px;
+    color: #FFD700;
+    top:130px;
+}
+.name{
+    position:absolute;
+    font-weight:bolder;
+    font-size:20px;
+    color: #FFD700;
+    top:160px;
+    left:270px;
+}
+.email{
+    position:absolute;
+    font-weight:bolder;
+    font-size:20px;
+    color: #FFD700;
+    top:255px;
+    left:270px;
+    background-color:transparent;
+}
+.producers{
+    position:absolute;
+    font-weight:bolder;
+    font-size:20px;
+    color: #FFD700;
+    top:345px;
+    left:270px;
+}
+.grade{
+    position:absolute;
+    font-weight:bolder;
+    font-size:20px;
+    color: #FFD700;
+    top:650px;
+    left:270px;
+}
+.choice{
+    position:absolute;
+    font-weight:bolder;
+    font-size:20px;
+    color: #FFD700;
+    top:770px;
+    left:270px;
+}
+.color1 {
+    position:absolute;
+    font-weight:bolder;
+    font-size:20px;
+    color: #FFD700;
+    top:890px;
+    left:270px;
+}
+.offer{
+    position:absolute;
+    font-weight:bolder;
+    font-size:20px;
+    color: #FFD700;
+    top:1030px;
+    left:270px;
+}
+
+nav {
+    background: #FF7F50;
+    flex-grow: 1;
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    position:absolute;
+    right:250px;
+    top:120px;
+}
+.forli{
+    list-style-type: none;
+    font-family: Monotype Corsiva;
+    font-weight:bolder;
+    font-size:26px;
+    color:#8B3626;
+    padding: 3px;
+    width:200px;
+    background: linear-gradient(to top, #FF6347, #FFE4C4);
+    border-radius: 7px;
+}
+
+aside {
+    flex-grow: 1;
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#FF7F50;
+}
+.noyt{
+    position:absolute;
+    right:9px;
+    top:120px;
+}
+
+.img{
+    position:absolute;
+}
+.b1, .b2{
+    position:absolute;
+    font-weight:bolder;
+    font-size:20px;
+    color:#FFD700;
+    top:1300px;
+    border-radius: 7px;
+    width:200px;
+    border-color:transparent;
+    background-color:transparent;
+}
+.b2{
+    right:550px;
+}
+.b1{
+    left:300px;
+}
+.b2:hover{
+    background-color:#FFFFE0;
+}
+.b1:hover{
+    background-color:#FFFFE0;
+}
+footer {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#FF4500;
+    border-top: 3px solid #FF4500;
+}
+.help{
+    position:absolute;
+    left:260px;
+    font-family: Monotype Corsiva;
+    font-weight:bolder;
+    font-size:26px;
+    color:#FFFFE0;
+}
+
+.cop{
+    font-family: Monotype Corsiva;
+    font-weight:bolder;
+    font-size:26px;
+    color:#FFFFE0;
+    position:absolute;
+    right:240px;
+    width:300px;
+}
+select {
+    background: transparent;
+    border: 3px solid #FFFFE0;
+}
+
+p{
+    font-family:Sylfaen;
+    font-weight:900;
+    font-size:22px;
+}
+
+label, select{
+    font-family:Monotype Corsiva;
+    font-weight:300;
+}
+
+.sale{
+    position:absolute;
+    right:20px;
+    top:120px;
+}
+a:link {
+    text-decoration: none;
+}
+
+a{
+    color:#8B3626;
+}
+table {
+    position: absolute;
+    top:300px;
+    border: 2px solid #008080;
+    border-collapse: collapse ;
+    color: #6A5ACD;
+}
+td{
+    padding: 5px;
+    border: 2px solid #008080;
+    text-align: center;
+}
+ul{
+    position: absolute;
+    top:900px;
+}
+
+ol {
+    position: absolute;
+    margin-top: 90px;
+    color:#6A5ACD;
+    text-align: center;
+    font-size: 20px;
+}
+h1{
+    font-family: Monotype Corsiva;
+    font-weight:bolder;
+    font-size:26px;
+    color:#6A5ACD;
+}

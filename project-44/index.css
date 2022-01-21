@@ -1,0 +1,102 @@
+body{
+    background: url("C:/Users/User/Documents/5 саипис/resources/instruments.jpg") 0.6;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;/*Свойство CSS flex-wrap задаёт правила вывода flex-элементов —  в одну строку или в несколько, с переносом блоков. Расположение в несколько линий.*/
+}
+
+header img{
+    width: 100%;
+    height: 200px;
+}
+article{
+    background: #c27115;
+    position: absolute;
+    top:100px;
+    left:100px;
+    width: 85%;
+    height: auto;
+}
+
+h1{
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+}
+.field, #new{
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    background-color: #d1732f;
+    width: auto;
+    height: auto;
+}
+
+
+label{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+section{
+    align-content: center;
+}
+input[type=text],
+input[type=number],
+select {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #e18038;
+    font-size: 16px;
+    background-color: #ffffff;
+    padding: 10px;
+    resize: none;/*Указывает, можно ли пользователю изменять размеры текстового поля*/
+}
+#button1, #button2, #button3, #button4, #button5, #button6, #buttonnew {
+    background-color: #e14a36;
+    font-size: 16px;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#button1, #button2, #button3, #button4, #button5, #button6:hover {
+    background-color: #ee7e2e;
+    color: white;
+}
+table{
+    width: 100%;
+    border: 2px solid #e86100;
+}
+td{
+    padding: 5px;
+}
+
+
+header {
+    flex: 100%;
+    background: #cc3434;
+    opacity: 0.7;
+    width: 30%;
+    height: 50px;
+}
+.cop{
+    font-family: Monotype Corsiva;
+    font-weight:bolder;
+    font-size:26px;
+    color: #ffffff;
+    position: absolute;
+    left: 500px;
+    right: 30px;
+    width:300px;
+}
+h1{
+    font-family:Sylfaen;
+    font-weight:900;
+    font-size:22px;
+}
+#new{
+    display: none;
+}

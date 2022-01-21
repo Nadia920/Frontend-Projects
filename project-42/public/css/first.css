@@ -1,0 +1,92 @@
+body {
+	background: url("../resource/university.png") no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.flexbox {
+	background-color: rgba(255, 255, 255, 0.5);
+	position: relative;
+	width: 1490px;
+	height: 700px;
+	display: flex;
+	margin-left: 13px;
+	z-index: 2;
+}
+
+nav {
+	background-color: beige;
+	opacity: 0.7;
+	width: 200px;
+	border-radius: 0 40px 40px 0;
+	border-left: 3px solid beige;
+}
+
+aside {
+	background-color: beige;
+	opacity: 0.7;
+	margin-left: 0px;
+	border-radius: 40px 0 0 40px;
+	border-right: 3px solid beige;
+	width: 200px;
+}
+
+.flexbox .middle-flexbox {
+ 	flex-grow: 2;
+}
+
+.buttons {
+	display: inline-block;
+}
+
+.text-form {
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+}
+
+.text-form textarea {
+	resize: none;
+	width: 200px;
+	margin: 5px;
+	height: 30px;
+}
+
+.text-form p {
+	margin: 0 0 0 5px;
+}
+
+.radio-form {
+	position: absolute;
+	margin-left: 250px;
+	margin-top: -220px;
+}
+
+.radio-form input {
+	margin: 15px;
+}
+
+.button-form {
+	position: absolute;
+	margin-left: 350px;
+	margin-top: -190px;
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+}
+
+.button-form button {
+	margin: 0 0 20px 0;
+	height: 30px;
+}
+
+#new {
+	margin-top: 10px;
+	height: 400px;
+}
+
+h4 {
+	width: 1000px;
+	margin-left: 10px;
+}

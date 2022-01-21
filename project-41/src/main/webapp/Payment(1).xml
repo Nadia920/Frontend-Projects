@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bank>
+    <payments enum_type="COMMUNAL_PAYMENTS" type="Коммунальный платёж" number_card = "4567123490563423" amount = "100"  sender = "Бакутин А.О."    recipient = "Кабак Н.О.">
+        <name>Комунальный платёж</name>
+        <description>Составные части:  показания жировки, показания счётчиков газа, электричества и воды</description>
+    </payments>
+     <payments enum_type="INTERNET" type="Интернет" number_card = "2345344567783456" amount = "50"  sender = "Соколовская А.А" recipient = "Чуб А.О.">
+        <name>Интернет</name>
+        <description>Byfly</description>
+    </payments>
+     <payments enum_type="PHONE" type="Телефон" number_card = "3489567812673489" amount = "20"  sender = "Календа И.Ю." recipient = "Сигаева Л.А.">
+        <name>Телефон</name>
+        <description>Life</description>
+    </payments>
+     <payments enum_type="ARBITRARY_PAYMENTS" type="Произвольный платёж" number_card = "4567123490563423" amount = "100"  sender = "Бакутин А.О." recipient = "Кабак Н.О. Счёт: BY60BPSB30131814110129330000">
+        <name>Произвольный платёж</name>
+        <description>Курсы</description>
+    </payments>
+</bank>

@@ -1,0 +1,31 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./s1.css">
+    <title>Книжный магазин</title>
+</head>
+<body>
+<section>
+    <div class="section">
+
+        <form  >
+            <div>
+                <p class="spisok">Книги в наличии
+                    <select name="txt_name" id="txt_name">
+                    </select>
+                </p>
+
+
+            </div>
+            <div>
+               <br> <input type="button" class="button-onclick" onclick="del();" value="Удалить элемент"> </br>
+                <br> <input type="button" class="button-onclick" id="create" onclick="myFunction()" value="Добавить элемент"></br>
+                <br> <input type="button" class="button-onclick" onclick="see();" value="Просмотр элементов"></br>
+              </div>
+            <div id="container"> </div>
+        </form>
+
+    </div>
+</section>
+<script src="./index.js"></script>
+</body>
+</html>

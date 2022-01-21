@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Students>
+	<Student>
+		<Name>Анастасия</Name>
+		<Sex>Женский</Sex>
+		<Age>19</Age>
+		<Faculty>ФРЭ</Faculty>
+	</Student>
+</Students>
