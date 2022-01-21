@@ -41,19 +41,19 @@ $(document).ready(function () {
     }
 
     $("#iPhone").click(function () {
-        loadFile("../resource/iPhoneOS.txt");
+        loadFile("resource/iPhoneOS.txt");
     });
 
     $("#Android").click(function () {
-        loadFile("../resource/AndroidOS.txt");
+        loadFile("resource/AndroidOS.txt");
     });
 
     $("#Bada").click(function () {
-        loadFile("../resource/BadaOS.txt");
+        loadFile("resource/BadaOS.txt");
     });
 
     $("#Symbian").click(function () {
-        loadFile("../resource/SymbianOS.txt");
+        loadFile("resource/SymbianOS.txt");
     });
 });
 
@@ -92,16 +92,16 @@ function getFileName(OSId) {
 
     switch (OSId.trim()) {
         case "iPhone OS":
-            fileName = "../resource/iPhoneOS.json";
+            fileName = "resource/iPhoneOS.json";
             break;
         case "Android OS":
-            fileName = "../resource/AndroidOS.json";
+            fileName = "resource/AndroidOS.json";
             break;
         case "Bada OS":
-            fileName = "../resource/BadaOS.json";
+            fileName = "resource/BadaOS.json";
             break;
         case "Symbian OS":
-            fileName = "../resource/SymbianOS.json";
+            fileName = "resource/SymbianOS.json";
             break;
     }
     return fileName;
