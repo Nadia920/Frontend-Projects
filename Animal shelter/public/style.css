@@ -29,7 +29,8 @@ article {
     background: url("animal.jpg");
     background-repeat: round;
     background-size: 100%;
-    width: 1250px;
+    width: 100%;
+    height: 730px;
     display: flex;
 }
 

@@ -139,6 +139,7 @@ aside {
 
 .img{
     position:absolute;
+    opacity: 0;
 }
 .b1, .b2{
     position:absolute;
